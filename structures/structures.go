@@ -11,3 +11,9 @@ type User struct{
 	created_at string `json:"created_at"`
 	updated_at string `json:"updated_at"`
 }
+
+type Response struct{
+	Status 	string	`json:"status"`
+	Data 	User	`json:"data"`
+	Message string	`json:"message"`
+}
