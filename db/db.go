@@ -41,4 +41,10 @@ func createString() string{
 	connection.Where("usuario=?",id).First(&user)
 	return user
  }
+
+ func CreateUser(user structures.User) structures.User{
+ 	connection.Create(&user)
+ 	return user
+
+ }
 	
